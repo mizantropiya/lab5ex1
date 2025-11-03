@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Positioning Task</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            position: relative;
+            min-height: 95vh;
+        }
+
+        .box-static {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            margin: 10px 0;
+        }
+
+        .box-relative-1 {
+            width: 115px;
+            height: 115px;
+            background-color: lightgreen;
+            position: relative;
+            margin: 10px 0;
+            left: 40px;
+        }
+
+        .box-relative-2 {
+            width: 150px;
+            height: 150px;
+            background-color: pink;
+            position: relative;
+            margin: 10px 0;
+            top: -40px;
+            left: 60px;
+        }
+
+        .box-zindex-1 {
+            width: 200px;
+            height: 200px;
+            background-color: lightcoral;
+            position: absolute;
+            top: 30px;
+            left: 160px;
+            z-index: 5;
+        }
+
+        .box-zindex-2 {
+            width: 200px;
+            height: 200px;
+            background-color: lightseagreen;
+            position: absolute;
+            top: 70px;
+            left: 180px;
+            z-index: 4;
+        }
+
+        .box-fixed-1 {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            position: fixed;
+            top: 0;
+            right: 0;
+        }
+
+        .copyright {
+            text-align: center;
+            font-size: 14px;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-static">Static</div>
+    <div class="box-static">Static</div>
+
+    <div class="box-relative-1">Relative 1</div>
+    <div class="box-relative-2">Relative 2</div>
+
+    <div class="box-zindex-1">Z-Index 5</div>
+    <div class="box-zindex-2">Z-Index 4</div>
+
+    <div class="box-fixed-1">Fixed Top-Right</div>
+
+    <div class="copyright">Сайт является собственностью Николь Кот</div>
+</body>
+</html>
